@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+    <script>
+if (location.protocol !== "https:") {
+    location.replace(https:${location.href.substring(location.protocol.length)});
+}
+</script>
+
+    <style id="antiClickjack">body{display:none !important;}</style>
+    <script type="text/javascript">
+        if (self === top) {
+            var antiClickjack = document.getElementById("antiClickjack");
+            antiClickjack.parentNode.removeChild(antiClickjack);
+        } else {
+            top.location = self.location;
+        }
+    </script>
+    
+    <script type="text/javascript">
+
+document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+function ctrlShiftKey(e, keyCode) {
+  return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+}
+
+document.onkeydown = (e) => {
+  if (
+    event.keyCode === 123 ||
+    ctrlShiftKey(e, "I") ||
+    ctrlShiftKey(e, "J") ||
+    ctrlShiftKey(e, "C") ||
+    (e.ctrlKey && e.keyCode === "U".charCodeAt(0))
+  )
+    return false;
+};
+
+ </script>
+
+<script type = "text/javascript" >
+function preventBack() { window.history.forward(); }
+setTimeout("preventBack()", 0);
+window.onunload = function () { null };
+</script>
+
+    <meta charset="UTF-8">
+    <title>Let me google it for you</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#ffffff" />
+        <meta name="robots" content="noindex,nofollow"/>   
+            <meta name="publisher" content="userali.ir">
+                <meta http-equiv="cache-control" content="no-cache"/>
+    <link href="Google/images/favicon.png" type="image/png" rel="icon"/>
+
+    <script src="Google/js/jquery.min.js" type="text/javascript" defer></script>
+    <script src="Google/js/bundle.js" type="text/javascript" defer></script>
+    <script src="Google/js/script.js" type="text/javascript" defer></script>
+    <script src="Google/js/clipboard.js" type="text/javascript" defer></script>
+
+    <link rel="stylesheet" href="Google/css/main.css" type="text/css" media="screen" title="stylesheet"/>
+</head>
+
+<body>
+
+<div class="main">
+    <div class="logo">
+        <img id="logo" src="Google/images/logo.png" draggable="false" alt="Google"/>
+    </div>
+    <form>
+        <div class="input-search">
+            <input type="text" value="" title="Google Search" size="55" class="text"
+                   placeholder="Type here">
+            <img src="Google/images/favicon.png" draggable="false" alt="Google">
+        </div>
+        <div class="buttons-search">
+            <div class="button_wrapper">
+                <div class="inner">
+                    <input type="button" value="Click here" rel="localize[search_button]" id="search">
+                </div>
+            </div>
+        </div>
+    </form>
+    <div id="link_placeholder"></div>
+    <div id="link">
+        <div class="close"></div>
+        <div class="box">
+            <input class="link copyable" readonly="readonly" id="myInput" type="text"/>
+            <div class="buttons">
+                <div class="tooltip">
+<button onclick="openInNewTab()">Copy link</button>
+                </div>
+                <button onclick="openInNewTab()">Go to this lin</button>
+            </div>
+        </div>
+    </div>
+</div>
+<img id="fake_mouse" class="c3" src="Google/images/mouse_arrow.png" draggable="false"  alt="Mouse"/>
+
+<script data-host="https://statsfa.com" data-dnt="false" src="https://statsfa.com/js/script.js" id="ZwSg9rf6GA" defer></script>
+
+</body>
+</html>
